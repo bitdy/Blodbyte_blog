@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import React from "react";
+import styles from "./page.module.css"
+
 
 const links = [
   {
@@ -38,7 +40,7 @@ const links = [
 
 const Navbar = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <Link href="/">Blod Byte</Link>
       <div>
         {links.map((link) => (
